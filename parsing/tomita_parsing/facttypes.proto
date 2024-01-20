@@ -1,0 +1,12 @@
+import "base.proto"; 
+import "facttypes_base.proto";
+import "articles_base.proto";
+
+message Name: NFactType.TFact
+{
+  required string personName = 1;
+  optional string personMention = 2;
+}
+
+
+message person : TAuxDicArticle {}
